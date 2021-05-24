@@ -30,8 +30,6 @@
             module#))
 
         ,module-sym
-        ,(when (and (not= new-local-fns nil) (> (length new-local-fns) 0))
-           `(local ,(sym :autoload) (. (require :aniseed.autoload) :autoload)))
         ,(let [aliases []
                vals []
                effects []
